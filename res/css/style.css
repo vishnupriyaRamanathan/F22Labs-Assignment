@@ -1,0 +1,396 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Proxima Nova;
+}
+
+.menu {
+    left: 0;
+    top: 0;
+    width: 6%;
+    float: left;
+    height: 100vh;
+    background-color: #2d3848;
+    position: fixed;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    font-size: 4px;
+}
+
+.half{
+  grid-template-rows: repeat(5,1fr);
+}
+
+.price{
+  text-align: right;
+  float: right;
+  margin-right: 3px;
+}
+
+.icon{
+  text-align: center;
+  padding-left: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #eee;
+  font-size: 12px;
+}
+
+.active{
+  background-color: #1990ea;
+}
+
+.fontSize{
+  font-size: 12px;
+  padding-top: 3px;
+}
+
+.store {
+    width: 94%;
+    height: 100vh;
+    float:left;
+    margin-left: 6%;
+}
+
+.left {
+    background: #4f5e74;
+    color: #fff;
+    width:17%;
+    float:left;
+    box-sizing: border-box;
+    padding: 40px 30px;
+    min-height: 100%;
+    position: fixed;
+    left: 6%;
+    top: 0;
+}
+
+.left-heading {
+    color: #1990ea;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.left-heading2 {
+    color: #ffea00;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.left ul {
+    padding: 0;
+    margin: 10px 0px;
+}
+
+.left ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.left ul li:hover {
+    opacity: 0.7;
+}
+
+.left-thumb {
+    width: 100%;
+    border-radius: 7.5px;
+}
+
+.right {
+    background: #eee;
+    width: 82%;
+    min-height: 100%;;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 18%;
+}
+
+.header {
+    background: #fff;
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 0 2.5%;
+}
+
+.page-title {
+    font-size: 1.05em;
+    color:#333;
+    font-weight: 400;
+}
+
+.featured {
+    width: 100%;
+    height: 225px;
+    background: #1990ea;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 155px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+
+.featured .highlight {
+    color:#fff;
+
+    font-weight: 400;
+    box-sizing: border-box;
+    height: 70px;
+    background: url('../img/dark-highlight.png');
+    line-height: 70px;
+    padding: 0 2.5%;
+}
+
+.category-title {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+.featured-right {
+    float: right;
+    display: inline-block;
+}
+
+.friends{
+  display: inline-block;
+}
+
+.buy-btn {
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    background: #50b758;
+    color: #fff;
+    padding: 7.5px 15px;
+    cursor: pointer;
+}
+
+.controls {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 53px;
+}
+
+.gallery-content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+.image-card-wrapper {
+    box-sizing: border-box;
+    width: 25%;
+    float:left;
+    padding: 10px;
+}
+
+.image-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+}
+
+.image-card img {
+    border-radius: 3px 3px 0px 0px ;
+    width: 100%;
+}
+
+.image-details {
+    box-sizing: border-box;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.image-details h1 {
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.image-details h3 {
+    font-weight: 400;
+    font-size: 0.7em;
+    color: #666;
+}
+
+.image-card img:hover{
+  opacity: 0.7;
+}
+
+
+.controls ul{
+  float: right;
+  width: 109%;
+  list-style-type: none;
+  text-align: center;
+  line-height: 0;
+  margin-top: -29px;
+}
+
+.controls a{
+  text-decoration: none;
+  padding-bottom: 14px;
+  color: #000;
+  font-weight: bold;
+}
+
+.controls li{
+  padding-left: 25px;
+
+  display: inline-block;
+}
+
+.controlActive{
+  border-bottom: solid 3px #1990ea;
+}
+
+.usage .titleUsage{
+  padding-top: 65px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bar{
+  width: 100%;
+  height: 3px;
+  background-color: #eee;
+}
+
+.bar .progress{
+  height: inherit;
+  background-color: #50b758;
+  width: 25%;
+}
+
+.grid{
+  color: #a9a9a9;
+  font-size: 22px;
+  padding-left: 20px;
+  line-height: 2.5;
+}
+
+.list{
+  color: #a9a9a9;
+  font-size: 22px;
+  padding-left: 12px;
+}
+
+input[type=text]{
+  padding: 6px;
+  width: 200px;
+  margin-left: 756px;
+  border-radius: 3px;
+  border: solid 1px #ddd;
+  margin-bottom: 7px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.inactive i{
+  color: #808080;
+}
+
+.user{
+  float: right;
+  width: 25%;
+  height: inherit;
+  margin-top: -55px;
+}
+
+.user img{
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  align-self: center;
+  margin-top: 8px;
+}
+
+.user h4{
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 10%;
+    height: 15px;
+    background: transparent;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    transition: opacity .2s;
+    margin-left: 12px;
+}
+
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #a9a9a9;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: #a9a9a9;
+    cursor: pointer;
+}
+
+.searchBar{
+  margin-top: -53px;
+
+}
+
+
+#modal {
+  width: 100vw;
+  height: 100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.5);
+  padding: 50px;
+  line-height: 100vh;
+  text-align: center;
+}
+
+#modal img {
+  max-width: 85vw;
+  max-height: 85vh;
+  margin: auto;
+  border: 10px solid #fff;
+  box-shadow: 5px 6px 8px rgba(0,0,0,0.5);
+}
+
+.hidden {
+  display: none;
+}
